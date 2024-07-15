@@ -1,0 +1,114 @@
+.warp-2 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	color: rgb(91, 91, 91);
+	margin-left: 1.7rem;
+	font-size: 0.688rem;
+	margin-bottom: 0.5rem;
+	margin-top: 1rem;
+	line-height: 1.2;
+}
+
+.name {
+	letter-spacing: 0.156rem;
+	font-weight: 600;
+}
+
+.major {
+	color: rgb(181, 181, 181);
+	font-size: 0.438rem;
+	letter-spacing: 0.156rem;
+}
+
+.warp-specla {
+	font-size: 0.55rem;
+	color: rgb(91, 91, 91);
+	width: 6.875rem;
+}
+
+.speclicem-spacing {
+	color: rgb(181, 181, 181);
+	margin-bottom: 0.37rem;
+
+}
+
+.speclicem-spacing:last-child {
+	margin-bottom: 0;
+}
+
+
+@media (min-width: 67.625rem) and (max-width: 90rem){ 
+	.speclicem-spacing {
+		margin-bottom: 0.26rem !important;
+	}
+}
+
+.titel-specla {
+	margin-bottom: 0.2rem;
+}
+
+@media (min-width: 40rem) {
+	.warp-2 {
+		margin-left: 1.6rem;
+		font-size: 1.063rem;
+		margin-bottom: 1.25rem;
+		margin-top: 1.875rem;
+	}
+
+	.name {
+		letter-spacing: 0.156rem;
+	}
+
+	.major {
+		font-size: 0.75rem;
+	}
+
+	.warp-specla {
+		font-size: 0.75rem;
+		width: 9rem;
+	}
+
+	.speclicem-spacing {
+
+		margin-bottom: 0.56rem;
+
+	}
+
+	.titel-specla {
+		margin-bottom: 0.7rem;
+	}
+
+
+}
+
+/* landscape */
+@media screen and (orientation: landscape) {
+	@media (max-width: 67.563rem) and (max-height:33.125rem) {
+		.warp-2 {
+			margin-left: 0.5rem !important;
+			font-size: 0.4rem !important;
+			margin-bottom: 0.2rem !important;
+			margin-top: 0 !important;
+		}
+
+		.major {
+			font-size: 0.4rem !important;
+		}
+
+		.warp-specla {
+			font-size: 0.4rem !important;
+			width: 5rem !important;
+			margin-top: -0.3rem !important;
+		}
+
+		.speclicem-spacing {
+			margin-bottom: 0.1rem !important;
+		}
+
+		.titel-specla {
+			margin-bottom: 0.1rem !important;
+		}
+	}
+}

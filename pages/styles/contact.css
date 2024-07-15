@@ -1,0 +1,46 @@
+.contact-holder {
+	position: fixed;
+	bottom: 0;
+	height: 18.5rem;
+}
+
+@media (min-width: 67.625rem) and (max-width: 90rem){ 
+	.contact-holder {
+		height: 14.25rem !important;
+	}
+
+	.Spacing-content, .Spacing-social {
+		margin-bottom: 0.5rem !important;
+	}
+}
+
+@media (min-width: 40rem) {
+	.contact-holder {
+		position: fixed;
+		left: 14.375rem;
+		bottom: 1rem;
+		height: 16.25rem;
+	}
+}
+
+/* landscape */
+@media screen and (orientation: landscape) {
+	@media (max-width: 67.563rem) and (max-height:33.125rem) {
+		.contact-holder {
+			height: 6.6875rem !important;
+			left: 6.1875rem !important;
+			bottom: 0.75rem !important;
+		}
+	}
+}
+
+@media (orientation: portrait) {
+	@media (min-width: 40rem) {
+		.contact-holder {
+			position: fixed;
+			left: 14.375rem;
+			bottom: 1rem;
+			height: 16.25rem;
+		}
+	}
+}

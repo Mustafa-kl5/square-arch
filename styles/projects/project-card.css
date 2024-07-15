@@ -1,0 +1,286 @@
+.card-container {
+	margin-top: 0.5rem;
+	-ms-overflow-style: none;
+	overflow: auto;
+	scrollbar-width: none;
+	/* Firefox */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: 100%;
+	width: 100% !important;
+	overflow-y: hidden;
+	overflow-x: auto;
+	align-content: flex-start;
+	gap: 0.25rem;
+}
+
+.info-over-image {
+	position: absolute;
+	bottom: 0.5rem;
+	left: 0.125rem;
+	padding-left: 0.2rem;
+	font-size: 0.813rem;
+	color: white;
+	z-index: 99;
+}
+
+@media (min-width: 67.625rem) and (max-width: 90rem){ 
+	.info-over-image {
+		font-size: 0.65rem !important;
+	}
+
+	.global-card-holder {
+		height: calc(100vh - 16.5rem) !important;
+	}
+}
+
+.project-container .tab-content {
+	width: calc(100% - 14.375rem);
+	height: calc(100% - 2.5rem);
+}
+
+.project-container,
+.card-container,
+.tab-pane {
+	height: 100% !important;
+}
+
+.tab-position {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 1.3rem;
+	padding-top: 0px !important;
+	width: 100%;
+	flex-wrap: nowrap !important;
+}
+
+.link {
+	text-decoration: none;
+	color: gray;
+}
+
+.link:hover {
+	color: black;
+}
+
+.Project-Image {
+	width: 11.563rem;
+	height: 11.563rem;
+}
+
+.tab-position {
+	display: flex;
+	justify-content: flex-start;
+	padding-right: 0;
+	padding-left: 14.375rem !important;
+}
+
+.nav-tabs .nav-item:first-child .nav-link {
+	padding-left: 0px;
+}
+
+.nav {
+
+	flex-wrap: wrap;
+
+}
+
+@media (max-height: 25.875rem) {
+	.info-over-image {
+		position: relative !important;
+		top: -1.4rem;
+		left: -0.1rem;
+		padding-left: 0.2rem;
+		font-size: 0.2rem;
+		color: white;
+		font-weight: bold;
+	}
+
+	.tab-position {
+		display: flex;
+		justify-content: flex-start;
+		padding-right: 0;
+		padding-left: 2.8rem !important;
+	}
+}
+
+.global-card-holder {
+	height: calc(100vh - 18.5rem);
+	margin-top: 5rem;
+	position: relative;
+}
+
+.project-box-card {
+	width: 100%;
+	height: 100%;
+}
+
+.card-project-image {
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transition: all 1s ease;
+	filter: grayscale(100%);
+	background-origin: border-box;
+}
+
+.card-project-image:hover, .info-over-image:hover + .card-project-image,  .info-over-image:hover  {
+	background-size: 104% 104%;
+	filter: grayscale(0);
+}
+
+.project-link {
+	position: relative;
+	cursor: pointer;
+}
+
+.project-link:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+	/* initial ratio of 1:1*/
+}
+
+.project-box-card {
+	position: absolute;
+	top: 0px;
+}
+
+@media (min-width: 40rem) {
+	.project-link {
+		aspect-ratio: 1 / 1;
+		height: calc(50% - 0.5rem);
+	}
+}
+
+@media (min-width: 40rem) and (max-width: 67.563rem) {
+	.global-card-holder {
+		margin-top: 4rem;
+		height: calc(100vh - 20.5rem) !important;
+	}
+}
+
+@media (min-width: 40rem) and (max-width: 67.563rem) {
+	.info-over-image {
+		left: 0.2rem;
+		padding-left: 0.2rem;
+		font-size: 0.5rem;
+		color: white;
+		font-weight: bold;
+	}
+
+	.info-over-image {
+		font-size: 0.6rem;
+	}
+
+
+	.global-card-holder {
+		margin-top: 4rem;
+		height: calc(100vh - 24.5rem);
+
+	}
+
+}
+
+
+
+@media screen and (orientation: portrait) {
+	@media screen and (max-width: 40rem) {
+		.card-container {
+			display: grid;
+			gap: 0.125rem 0.125rem;
+			grid-template-areas: ". . .";
+			height: 100%;
+			width: 100%;
+			justify-content: unset !important;
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+
+		.project-container .tab-content {
+			width: 100% !important;
+		}
+
+		.global-card-holder {
+			padding-left: 0.875rem;
+			height: calc(100% - 13rem);
+			width: 100%;
+			padding-right: 0.875rem;
+			margin-top: 3.438rem;
+			position: absolute !important;
+		}
+
+		.info-over-image {
+			font-size: 0.438rem;
+			bottom: 0.2rem;
+		}
+
+		.info-over-image div {
+			font-size: 0.438rem;
+		}
+
+		.tab-position {
+			justify-content: flex-end !important;
+		}
+
+	}
+}
+
+@media screen and (orientation: landscape) {
+	@media (max-width: 67.563rem) and (max-height:33.125rem) {
+		.global-card-holder {
+			height: calc(100vh - 9rem) !important;
+			margin-top: 2rem !important;
+		}
+
+		.project-container .tab-content {
+			width: calc(100% - 6.375rem) !important;
+		}
+
+		.project-page .card-container {
+			margin-top: 0px !important;
+		}
+
+		.project-page .button-holder {
+			width: 3.625rem !important;
+			right: 1rem !important;
+			bottom: 0.5rem !important;
+		}
+
+		.info-over-image {
+			font-size: 0.4rem !important;
+			top: -1rem !important;
+		}
+
+		.project-link {
+			height: calc(50% - .2rem) !important;
+			aspect-ratio: 1 !important;
+		}
+
+		.card-container {
+			grid-gap: 0.1rem !important;
+		}
+
+		.tab-position {
+			padding-left: 6.2rem !important;
+		}
+
+		.info-over-image {
+			position: absolute !important;
+			top: unset !important;
+			bottom: 0.25rem;
+			left: -0.1rem;
+			padding-left: 0.2rem;
+			font-size: 0.2rem;
+			color: white;
+			font-weight: bold;
+		}
+
+		.nav {
+			margin-bottom: 0.25rem !important;
+		}
+	}
+}

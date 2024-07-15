@@ -1,0 +1,16 @@
+.Warp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.menu-position {
+    z-index: 100;
+    position: fixed;
+    left: 2.188rem;
+    bottom: 2.188rem;
+}
+
+

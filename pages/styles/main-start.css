@@ -1,0 +1,111 @@
+.wrap-box {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 600;
+}
+
+/*///////////////////////*/
+.Left-Text {
+	color: rgb(181, 181, 181);
+	font-size: 0.65rem;
+	text-align: right;
+	width: 13rem;
+	min-width: 13rem;
+	margin-right: 0rem;
+}
+
+.Right-Text {
+	color: rgb(181, 181, 181);
+	font-size: 0.65rem;
+	width: 14rem;
+	min-width: 14rem;
+	margin-left: 1rem;
+}
+
+.Image-box {
+	width: 13rem;
+	height: 13rem;
+	min-width: 11.25rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+/*land scape*/
+/* landscape */
+@media screen and (orientation: landscape) {
+	@media (max-width: 67.563rem) and (max-height:33.125rem) {
+		.Left-Text {
+			font-size: 0.5rem !important;
+			width: 10rem !important;
+			min-width: 10rem !important;
+			margin-right: 2.65rem !important;
+		}
+
+		.Right-Text {
+			font-size: 0.5rem !important;
+			width: 11rem !important;
+			min-width: 11rem !important;
+			margin-left: 3.65rem !important;
+		}
+
+		.Image-box {
+			width: 7.375rem !important;
+			height: 7.375rem !important;
+			min-width: 3.375rem !important;
+			margin-top: 0.2rem !important;
+			margin-bottom: 0.2rem !important;
+		}
+	}
+}
+
+/* desktop screen */
+
+@media (min-width: 40rem) {
+	.Left-Text {
+		font-size: 1rem;
+		width: 20rem;
+		min-width: 19rem;
+		margin-right: 2.2rem;
+	}
+
+	.Right-Text {
+		font-size: 1rem;
+		width: 22rem;
+		min-width: 19rem;
+		margin-left: 4.2rem;
+	}
+
+	.Image-box {
+		width: 17.75rem;
+		height: 17.75rem;
+		min-width: 13.75rem;
+		margin-top: 0.6rem;
+		margin-bottom: 0.6rem;
+	}
+}
+
+@media (min-width: 113rem) {
+	.Left-Text {
+		font-size: 1.2rem;
+		width: 26rem;
+		margin-right: 4rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.Right-Text {
+		font-size: 1.2rem;
+		width: 26rem;
+		margin-left: 4rem;
+		margin-top: 0.5rem;
+	}
+
+	.Image-box {
+		width: 22rem;
+		height: 22rem;
+		min-width: 13.75rem;
+		margin-top: 0.6rem;
+		margin-bottom: 0.6rem;
+	}
+}

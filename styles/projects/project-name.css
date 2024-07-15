@@ -1,0 +1,71 @@
+.warp-text {
+	color: rgb(91, 91, 91);
+	margin-left: 1.6rem;
+	font-size: 0.688rem;
+	margin-bottom: 0.5rem;
+	margin-top: 1rem;
+}
+
+.Text {
+	letter-spacing: 0.156rem;
+	font-weight: 600;
+	margin-bottom: -0.1rem;
+}
+
+.location {
+	color: rgb(181, 181, 181);
+	font-size: 0.438rem;
+	letter-spacing: 0.063rem;
+}
+
+@media (min-width: 40rem) {
+	.warp-text {
+		font-size: 1.2rem;
+		margin-left: 2.125rem;
+		margin-bottom: -1rem;
+	}
+
+	.location {
+		font-size: 0.75rem;
+	}
+
+	.Text {
+		margin-bottom: 0.1rem;
+		letter-spacing: 0.2rem;
+	}
+}
+
+/* landscape */
+@media screen and (orientation: landscape) {
+	@media (max-width: 67.563rem) and (max-height:33.125rem) {
+		.warp-text {
+			font-size: 0.5rem !important;
+			margin-left: 0.5rem !important;
+			margin-top: 0.444rem !important;
+			line-height: 1 !important;
+			margin-bottom: 0.4rem !important;
+		}
+
+		.location {
+			font-size: 0.4rem !important;
+		}
+
+		.Text {
+			margin-bottom: 0.1rem !important;
+			letter-spacing: 0.2rem !important;
+		}
+	}
+}
+
+/* tablet */
+@media (min-width: 40rem) and (max-width: 67.563rem) {
+	.warp-text {
+		font-size: 1.2rem;
+		margin-left: 2.125rem;
+		margin-bottom: -1rem;
+	}
+
+	.location {
+		font-size: 0.75rem;
+	}
+}

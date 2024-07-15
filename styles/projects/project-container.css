@@ -1,0 +1,20 @@
+.Wrap-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.Wrap-text {
+    display: flex;
+    align-items: flex-start;
+}
+
+.button-wrap{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    height: 7.188rem;
+} 

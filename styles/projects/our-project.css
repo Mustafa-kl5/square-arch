@@ -1,0 +1,56 @@
+.title {
+	font-size: 0.625rem;
+	letter-spacing: 0.156rem;
+	color: rgb(91, 91, 91);
+	font-weight: 600;
+	margin-left: 1.7rem;
+	margin-top: 1.3rem;
+}
+
+.sup-title {
+	font-size: 0.438rem;
+	letter-spacing: 0;
+	margin-bottom: 0.5rem;
+	color: rgb(181, 181, 181);
+	margin-left: 1.7rem;
+	margin-top: 0.1rem;
+}
+
+@media (min-width: 40rem) {
+	.title {
+		font-size: 1.063rem;
+		margin-left: 2.1rem;
+		margin-top: 1.875rem;
+	}
+
+	.sup-title {
+		font-size: 0.75rem;
+		margin-left: 2.1rem;
+		margin-bottom: 1rem;
+	}
+
+	.decription {
+		margin-top: -1.3rem;
+	}
+}
+
+/* landscape */
+@media screen and (orientation: landscape) {
+	@media (max-width: 67.563rem) and (max-height:33.125rem) {
+		.title {
+			font-size: 0.256rem !important;
+			margin-left: 0.4rem !important;
+			margin-top: 0.4rem !important;
+		}
+
+		.sup-title {
+			font-size: 0.2rem !important;
+			margin-bottom: 0.3rem !important;
+			margin-left: 0.4rem !important;
+		}
+
+		.decription {
+			margin-top: -0.2rem !important;
+		}
+	}
+}

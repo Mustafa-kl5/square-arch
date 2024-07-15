@@ -1,0 +1,135 @@
+.button-next {
+	border: none;
+	background-color: unset;
+}
+
+.swiper-arrows {
+	width: 5.625rem;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	right: 1.3rem;
+	bottom: -2rem;
+	align-items: center;
+	flex-wrap: nowrap;
+	z-index: 99;
+}
+
+.button-prev {
+	border: none;
+	background-color: unset;
+}
+
+.middle-font {
+	font-size: 0.5rem;
+	color: rgb(181, 181, 181);
+}
+
+@media (min-width: 67.625rem) and (max-width: 90rem){ 
+	.swiper-arrows {
+		bottom: -2.5rem !important;
+	}
+}
+
+@media (min-width: 40rem) {
+	.swiper-arrows {
+		bottom: -3rem;
+		width: 10.625rem;
+		right: 2.5rem;
+	}
+
+	.button-next {
+		border: none;
+		background-color: unset;
+	}
+
+	.button-prev {
+		border: none;
+		background-color: unset;
+	}
+
+	.middle-font {
+		font-size: 0.75rem;
+		color: rgb(181, 181, 181);
+		padding-bottom: 0.2rem;
+	}
+
+	.button-prev>span {
+		width: 15px !important;
+		height: 20px !important;
+	}
+
+	.button-next>span {
+		width: 15px !important;
+		height: 20px !important;
+	}
+}
+
+/* landscape */
+@media screen and (orientation: landscape) {
+	@media (max-width: 67.563rem) and (max-height:33.125rem) {
+		.swiper-arrows {
+			bottom: -1.5rem !important;
+			right: 0.8rem !important;
+			width: 4.625rem !important;
+		}
+
+		.button-next {
+			border: none !important;
+			background-color: unset !important;
+		}
+
+		.button-prev {
+			border: none !important;
+			background-color: unset !important;
+		}
+
+		.middle-font {
+			right: 1rem !important;
+			color: rgb(181, 181, 181) !important;
+			font-size: 0.4rem !important;
+			padding-top: 0.4rem !important;
+		}
+
+		.button-next>span, .button-prev>span {
+			width: 0.5rem !important;
+			height: 0.5rem !important;
+		}
+	}
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	font-size: 18px;
+	width: unset !important;
+	height: 100%;
+	aspect-ratio: 1 / 1;
+}
+
+.swiper-slide img {
+	display: block;
+	height: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: 100% 100%;
+}
+
+.image-box {
+	height: 100%;
+	aspect-ratio: 1 / 1;
+	background-size: 100% 100%;
+}
+
+.carousel-image {
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 40rem) and (max-width: 67.563rem) {
+	.swiper-arrows {
+		right: 1.3rem !important;
+	}
+}

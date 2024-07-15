@@ -1,0 +1,40 @@
+.Footer-Box {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.copy-right {
+	color: rgb(181, 181, 181);
+	font-size: 0.375rem;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	position: absolute;
+	z-index: 100;
+	position: fixed;
+	bottom: 0;
+	margin-top: 0.313rem;
+	margin-bottom: 0.2rem;
+	margin-left: 0.8rem;
+}
+
+/* land scape screen */
+/* landscape */
+@media screen and (orientation: landscape) {
+	@media (max-width: 67.563rem) and (max-height:33.125rem) {
+		.copy-right {
+			font-size: 0.156rem !important;
+			margin-left: 0.5rem !important;
+			margin-bottom: 0.2rem !important;
+		}
+	}
+}
+
+/* desktop screen */
+@media (min-width: 40rem) {
+	.copy-right {
+		font-size: 0.563rem;
+		margin-left: 1.5rem;
+	}
+}

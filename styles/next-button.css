@@ -1,0 +1,45 @@
+.next-button {
+	background-color: unset;
+	border: none;
+	font-size: 0.5rem;
+	color: rgb(181, 181, 181);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+.next-button>span {
+	width: 0.7rem !important;
+	height: 0.7rem !important;
+	margin-left: 0.5rem !important;
+}
+
+.next-button:hover {
+	color: rgb(181, 181, 181);
+}
+
+@media (min-width: 40rem) {
+	.next-button {
+		font-size: 0.75rem;
+	}
+
+	.next-button>span {
+		width: 1.2rem !important;
+		height: 1.2rem !important;
+	}
+
+}
+
+/* landscape */
+@media screen and (orientation: landscape) {
+	@media (max-width: 67.563rem) and (max-height:33.125rem) {
+		.next-button {
+			font-size: 0.4rem !important;
+		}
+
+		.next-button>span {
+			width: 0.5rem !important;
+			height: 0.5rem !important;
+		}
+	}
+}
